@@ -1,0 +1,29 @@
+/* WHOLE MAP */
+
+/* html body takes up whole screen */
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+/* map occupies entire screen */
+#map{
+	height:100%;
+	width:100%;
+	bottom:0;
+}
+
+/* browser adds margin by default, and that adds a scrollbar ... no good */
+body {
+  margin: 0;
+  overflow:hidden;
+  overflow-x:hidden;
+}
+
+#sidebar{
+  position:absolute;
+  width: 30%;
+  height:100%;
+  background-color: teal;
+  z-index: 999999;
+}
